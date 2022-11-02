@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spans {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.text {
+  font-size: 14px;
+  margin-left: 15px;
+  color: white;
+  cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+.container1 {
+  @extend .container;
+  background-color: black;
+}

@@ -1,0 +1,117 @@
+.container {
+  background-image: url("../../images/arena.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: 70vh;
+  }
+}
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+  @media only screen and (max-width: 600px) {
+    font-size: 26px;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img {
+  margin-right: 10px;
+  @media only screen and (max-width: 600px) {
+    width: 14px;
+  }
+}
+.number {
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+  }
+}
+
+.email {
+  @extend .phone;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.line {
+  @media only screen and (max-width: 600px) {
+    width: 12px;
+    height: 25px;
+  }
+}
+.sectionTwo {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding-top: 30%;
+    align-items: center;
+    margin: 0 10px;
+  }
+}
+
+.desc {
+  @extend .number;
+}
+
+.input {
+  border: 1px solid orange;
+  background-color: transparent;
+  width: 400px;
+  height: 60px;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 600px) {
+    margin: 10px 0;
+    height: 30px;
+    width: 180px;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid orange;
+  cursor: pointer;
+  height: 50px;
+  @media only screen and (max-width: 600px) {
+    height: 30px;
+    margin-top: 40px;
+  }
+}
+
+.area {
+  @extend .input;
+  height: 200px;
+  @media only screen and (max-width: 600px) {
+    height: 140px;
+  }
+}

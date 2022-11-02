@@ -1,0 +1,91 @@
+.container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../images/basket.svg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    height: 30%;
+  }
+}
+
+.headText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+.subtitle {
+  color: rgba(247, 148, 30, 1);
+  font-weight: 500;
+  font-size: 20px;
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+}
+
+.directorContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 60px;
+  margin-top: 3%;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.director {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 20px;
+  color: white;
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+
+.desc {
+  font-size: 20px;
+  color: rgba(247, 148, 30, 1);
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.directorImage {
+  @media only screen and (max-width: 600px) {
+    width: 60%;
+  }
+}
+
+.img {
+  margin-left: 80%;
+  cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    margin-left: 70%;
+    width: 130px;
+  }
+}

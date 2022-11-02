@@ -1,0 +1,74 @@
+.container {
+  height: 40vh;
+  background-image: url("../../images/basket.svg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: 20vh;
+  }
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40%;
+  cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    padding-left: 1%;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  @media only screen and (max-width: 600px) {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+.subcontainer {
+  display: flex;
+  align-items: center;
+  padding-left: 80%;
+  @media only screen and (max-width: 600px) {
+    padding-left: 10%;
+    font-size: 8px;
+    margin-right: 100px;
+  }
+}
+
+.cnt {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 20px;
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  }
+}
+
+.subcontainer2 {
+  @extend .subcontainer;
+  margin-top: 20px;
+  @media only screen and (max-width: 600px) {
+    padding-left: 10%;
+  }
+}
+
+.instagram {
+  margin-left: 20px;
+}
+
+.ball {
+  @media only screen and (max-width: 600px) {
+    height: 60px;
+  }
+}

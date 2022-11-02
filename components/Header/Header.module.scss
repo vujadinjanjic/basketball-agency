@@ -1,0 +1,30 @@
+.container {
+  height: 35px;
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.email {
+  color: white;
+  font-size: 12px;
+  padding-left: 5px;
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+    padding-left: 0;
+  }
+}
+
+.subcontainer {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  @media only screen and (max-width: 600px) {
+    padding-right: 10px;
+  }
+}

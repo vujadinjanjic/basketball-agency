@@ -1,0 +1,110 @@
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  @media only screen and (max-width: 600px) {
+    height: auto;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(247, 148, 30, 1);
+  margin-top: 10px;
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+    width: 75%;
+  }
+}
+
+.directors {
+  width: 90%;
+}
+
+.profileImg {
+  width: 240px;
+  @media only screen and (max-width: 600px) {
+    width: 140px;
+    height: 280px;
+  }
+}
+
+.groupImage {
+  width: 380px;
+  @media only screen and (max-width: 600px) {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 20px;
+}
+
+.name {
+  font-size: 24px;
+  padding-bottom: 20px;
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}
+
+.desc {
+  color: white;
+  font-size: 18px;
+  @media only screen and (max-width: 600px) {
+    font-size: 11px;
+  }
+}
+
+.directorOne {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40%;
+  }
+}
+
+.directorTwo {
+  @extend .directorOne;
+}
+
+.sectionThree {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

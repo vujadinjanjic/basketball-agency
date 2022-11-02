@@ -1,0 +1,50 @@
+.container {
+  background-image: url("../../images/ballOpacity.svg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 600px) {
+    background-size: 700px;
+    height: auto;
+    display: flex;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.playerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 2rem;
+  @media only screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+  }
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 220px;
+  height: 260px;
+  @media only screen and (max-width: 600px) {
+    width: 180px;
+    height: 160px;
+  }
+}
