@@ -1,5 +1,11 @@
 {
   "home": {
     "welcome": "Welcome to our page"
+  },
+  "headerBar": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "players": "PLAYERS",
+    "contact": "CONTACT"
   }
 }

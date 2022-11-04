@@ -1,3 +1,4 @@
+import { GetStaticPropsContext } from "next";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import HeaderBar from "../components/HeaderBar/HeaderBar";
@@ -16,3 +17,11 @@ const Player = () => {
 };
 
 export default Player;
+
+export function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
+}
