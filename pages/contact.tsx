@@ -1,3 +1,4 @@
+import { GetStaticPropsContext } from "next";
 import ContactPage from "../components/ContactPage/ContactPage";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -16,3 +17,11 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
+}

@@ -1,3 +1,4 @@
+import { GetStaticPropsContext } from "next";
 import DirectorsComponent from "../components/DirectorsComponent/DirectorsComponent";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -16,3 +17,11 @@ const Directors = () => {
 };
 
 export default Directors;
+
+export function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
+}

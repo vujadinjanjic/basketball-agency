@@ -6,28 +6,30 @@ import call from "../../images/call.svg";
 import instagram from "../../images/insta.svg";
 import facebook from "../../images/fb.svg";
 import { useRouter } from "next/router";
+import { useTranslations } from "use-intl";
 
 const Footer = () => {
   const router = useRouter();
+  const t: any = useTranslations("headerBar");
 
   return (
     <div className={styles.container}>
       <Image alt="" src={Ball} height={200} className={styles.ball} />
       <div className={styles.textContainer}>
         <span className={styles.email} onClick={() => router.push("/")}>
-          POCETNA
+          {t("home")}
         </span>
         <span
           className={styles.email}
           onClick={() => router.push("/directors")}
         >
-          O NAMA
+          {t("about")}
         </span>
         <span className={styles.email} onClick={() => router.push("/players")}>
-          IGRACI
+          {t("players")}
         </span>
         <span className={styles.email} onClick={() => router.push("/contact")}>
-          KONTAKT
+          {t("contact")}
         </span>
       </div>
       <div className={styles.contact}>

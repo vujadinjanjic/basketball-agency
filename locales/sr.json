@@ -1,5 +1,11 @@
 {
   "home": {
     "welcome": "Dobro dosli"
+  },
+  "headerBar": {
+    "home": "POCETNA",
+    "about": "O NAMA",
+    "players": "IGRACI",
+    "contact": "KONTAKT"
   }
 }
