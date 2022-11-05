@@ -1,11 +1,15 @@
 {
   "home": {
-    "welcome": "Dobro dosli"
+    "welcome": "Dobro dosli",
+    "content": "PONUDA"
   },
   "headerBar": {
     "home": "POCETNA",
     "about": "O NAMA",
     "players": "IGRACI",
     "contact": "KONTAKT"
+  },
+  "contact": {
+    "title": "Kontaktirajte nas"
   }
 }

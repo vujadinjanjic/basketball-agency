@@ -1,11 +1,15 @@
 {
   "home": {
-    "welcome": "Welcome to our page"
+    "welcome": "Welcome to our page",
+    "content": "CONTENT"
   },
   "headerBar": {
     "home": "HOME",
     "about": "ABOUT US",
     "players": "PLAYERS",
     "contact": "CONTACT"
+  },
+  "contact": {
+    "title": "Contact us"
   }
 }

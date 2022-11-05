@@ -3,11 +3,14 @@ import Image from "next/image";
 import mobile from "../../images/mobile.svg";
 import message from "../../images/orangeMessage.svg";
 import line from "../../images/line.svg";
+import { useTranslations } from "use-intl";
 
 const ContactPage = () => {
+  const t: any = useTranslations("contact");
+
   return (
     <div className={styles.container}>
-      <span className={styles.title}>Kontaktirajte nas</span>
+      <span className={styles.title}>{t("title")}</span>
       <div className={styles.sectionTwo}>
         <div className={styles.contact}>
           <div className={styles.phone}>
