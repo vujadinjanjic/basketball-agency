@@ -16,7 +16,7 @@ const FirstHomeComponent = () => {
           ornare.
         </span>
       </div>
-      <span className={styles.button}>PONUDA</span>
+      <span className={styles.button}>{t("content")}</span>
     </div>
   );
 };
