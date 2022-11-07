@@ -1,11 +1,19 @@
 import styles from "../styles/Home.module.css";
-import Header from "../components/Header/Header";
-import FirstHomeComponent from "../components/FirstHomeComponent/FirstHomeComponent";
-import SecondHomeComponent from "../components/SecondHomeComponent/SecondHomeComponent";
-import ThirdHomeComponent from "../components/ThirdHomeComponent/ThirdHomeComponent";
-import Footer from "../components/Footer/Footer";
 import { useTranslations } from "use-intl";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("../components/Header/Header"));
+const Footer = dynamic(() => import("../components/Footer/Footer"));
+const FirstHomeComponent = dynamic(
+  () => import("../components/FirstHomeComponent/FirstHomeComponent")
+);
+const SecondHomeComponent = dynamic(
+  () => import("../components/SecondHomeComponent/SecondHomeComponent")
+);
+const ThirdHomeComponent = dynamic(
+  () => import("../components/ThirdHomeComponent/ThirdHomeComponent")
+);
 
 export default function Home() {
   const t: any = useTranslations("home");
