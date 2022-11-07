@@ -7,10 +7,6 @@ import styles from "./FirstHomeComponent.module.scss";
 const FirstHomeComponent = () => {
   const t: any = useTranslations("home");
 
-  const players = usePlayers();
-
-  console.log("PLAYERS: ", players);
-
   return (
     <div className={styles.container}>
       <HeaderBar />

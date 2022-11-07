@@ -11,5 +11,12 @@
   },
   "contact": {
     "title": "Kontaktirajte nas"
+  },
+  "playerDetails": {
+    "name": "Ime:",
+    "height": "Visina:",
+    "weight": "Tezina:",
+    "age": "Godine:",
+    "position": "Pozicija:"
   }
 }

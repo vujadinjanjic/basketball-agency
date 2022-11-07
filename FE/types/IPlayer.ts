@@ -5,5 +5,5 @@ export interface IPlayer {
   age: number;
   height: number;
   weight: number;
-  postion: string;
+  position: string;
 }

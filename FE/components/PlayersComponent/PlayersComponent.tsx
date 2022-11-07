@@ -7,47 +7,10 @@ import { useEffect, useState } from "react";
 import { IPlayer } from "../../types/IPlayer";
 import usePlayers from "../../hooks/usePlayers";
 
-// const players = [
-//   {
-//     name: "Joca Mikic",
-//     img: player,
-//   },
-//   {
-//     name: "Steva Jokic",
-//     img: player,
-//   },
-//   {
-//     name: "Joca Mikic",
-//     img: player,
-//   },
-//   {
-//     name: "Joca Mikic",
-//     img: player,
-//   },
-//   {
-//     name: "Steva Jokic",
-//     img: player,
-//   },
-//   {
-//     name: "Joca Mikic",
-//     img: player,
-//   },
-//   {
-//     name: "Joca Mikic",
-//     img: player,
-//   },
-//   {
-//     name: "Steva Jokic",
-//     img: player,
-//   },
-// ];
-
 const PlayersComponent = () => {
   const router = useRouter();
-  // const [players, setPlayers] = useState<IPlayer[]>([]);
 
   const players = usePlayers();
-  // console.log("PLS", pls);
 
   return (
     <div className={styles.container}>
@@ -57,7 +20,7 @@ const PlayersComponent = () => {
           <div
             className={styles.player}
             key={player._id}
-            onClick={() => router.push("/player")}
+            onClick={() => router.push(`/player/${player._id}`)}
           >
             <Image alt="" src={batum} className={styles.img} />
             <span>{player.firstName}</span>
