@@ -1,9 +1,15 @@
 import { useTranslations } from "use-intl";
+import usePlayers from "../../hooks/usePlayers";
+import { PlayerServicve } from "../../services/players.services";
 import HeaderBar from "../HeaderBar/HeaderBar";
 import styles from "./FirstHomeComponent.module.scss";
 
 const FirstHomeComponent = () => {
   const t: any = useTranslations("home");
+
+  const players = usePlayers();
+
+  console.log("PLAYERS: ", players);
 
   return (
     <div className={styles.container}>

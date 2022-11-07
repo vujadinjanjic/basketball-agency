@@ -2,6 +2,7 @@ import styles from "./ThirdHomeComponent.module.scss";
 import batum from "../../images/batum.svg";
 import basket from "../../images/club.svg";
 import Image from "next/image";
+import usePlayers from "../../hooks/usePlayers";
 
 const players = [
   {
@@ -42,14 +43,16 @@ const partners = [
 ];
 
 const ThirdHomeComponent = () => {
+  const players = usePlayers();
   return (
     <div className={styles.container}>
       <span className={styles.title}>Lorem ipsum</span>
       <div className={styles.playerContainer}>
         {players.map((player) => (
-          <div className={styles.player} key={player.name}>
-            <Image src={player.img} alt="" height={350} />
-            <span className={styles.name}>{player.name}</span>
+          <div className={styles.player} key={player._id}>
+            <Image src={batum} alt="" height={350} />
+            <span className={styles.name}>{player.firstName}</span>
+            <span className={styles.name}>{player.lastName}</span>
           </div>
         ))}
       </div>

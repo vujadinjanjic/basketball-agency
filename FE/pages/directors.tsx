@@ -1,9 +1,13 @@
 import { GetStaticPropsContext } from "next";
-import DirectorsComponent from "../components/DirectorsComponent/DirectorsComponent";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
 import HeaderBar from "../components/HeaderBar/HeaderBar";
 import styles from "../styles/Directors.module.scss";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("../components/Header/Header"));
+const DirectorsComponent = dynamic(
+  () => import("../components/DirectorsComponent/DirectorsComponent")
+);
+const Footer = dynamic(() => import("../components/Footer/Footer"));
 
 const Directors = () => {
   return (

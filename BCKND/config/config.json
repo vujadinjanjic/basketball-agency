@@ -1,0 +1,18 @@
+{
+  "common": {
+    "port": 5000,
+    "log": {
+      "level": "info"
+    }
+  },
+  "env": {
+    "name": "development"
+  },
+  "db": {
+    "username": "",
+    "password": "",
+    "clusterName": "Cluster0",
+    "dbName": "basketballAgency",
+    "playerCollectionName": "players"
+  }
+}
