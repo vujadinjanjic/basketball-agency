@@ -11,5 +11,12 @@
   },
   "contact": {
     "title": "Contact us"
+  },
+  "playerDetails": {
+    "name": "Name:",
+    "height": "Height:",
+    "weight": "Weight:",
+    "age": "Age:",
+    "position": "Position:"
   }
 }

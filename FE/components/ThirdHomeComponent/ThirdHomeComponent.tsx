@@ -3,25 +3,7 @@ import batum from "../../images/batum.svg";
 import basket from "../../images/club.svg";
 import Image from "next/image";
 import usePlayers from "../../hooks/usePlayers";
-
-const players = [
-  {
-    name: "John Doe",
-    img: batum,
-  },
-  {
-    name: "Nikola Jokic",
-    img: batum,
-  },
-  {
-    name: "Sava Savanovic",
-    img: batum,
-  },
-  {
-    name: "Vujadin Janjic",
-    img: batum,
-  },
-];
+import { useRouter } from "next/router";
 
 const partners = [
   {
@@ -41,15 +23,19 @@ const partners = [
     img: basket,
   },
 ];
-
 const ThirdHomeComponent = () => {
+  const router = useRouter();
   const players = usePlayers();
   return (
     <div className={styles.container}>
       <span className={styles.title}>Lorem ipsum</span>
       <div className={styles.playerContainer}>
         {players.map((player) => (
-          <div className={styles.player} key={player._id}>
+          <div
+            className={styles.player}
+            key={player._id}
+            onClick={() => router.push(`/player/${player._id}`)}
+          >
             <Image src={batum} alt="" height={350} />
             <span className={styles.name}>{player.firstName}</span>
             <span className={styles.name}>{player.lastName}</span>
