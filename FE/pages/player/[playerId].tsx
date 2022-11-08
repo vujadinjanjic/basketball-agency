@@ -15,7 +15,7 @@ const Player = () => {
   const router = useRouter();
   const { playerId } = router.query;
   const allPlayers = usePlayers();
-  const currentPlayer = allPlayers.find((player) => player._id === playerId);
+  const currentPlayer = allPlayers?.find((player) => player._id === playerId);
   return (
     <div className={styles.container}>
       <Header />
