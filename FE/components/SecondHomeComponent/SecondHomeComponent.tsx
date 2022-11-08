@@ -1,21 +1,12 @@
 import styles from "./SecondHomeComponent.module.scss";
-import director from "../../images/director.svg";
+import directorImage from "../../images/director.svg";
 import Image from "next/image";
 import next from "../../images/nextButton.svg";
+import useDirectors from "../../hooks/useDirectors";
 
 const SecondHomeComponent = () => {
-  const directors = [
-    {
-      name: "Pera Peric",
-      desc: "Morbi in sem quis dui ",
-      img: director,
-    },
-    {
-      name: "Mika Mikic",
-      desc: "Morbi in sem quis ",
-      img: director,
-    },
-  ];
+  const directors = useDirectors();
+
   return (
     <div className={styles.container}>
       <div className={styles.headText}>
@@ -26,10 +17,14 @@ const SecondHomeComponent = () => {
       </div>
       <div className={styles.directorContainer}>
         {directors.map((director) => (
-          <div className={styles.director} key={director.name}>
-            <Image src={director.img} alt="" className={styles.directorImage} />
-            <span className={styles.name}>{director.name}</span>
-            <span className={styles.desc}>{director.desc}</span>
+          <div className={styles.director} key={director._id}>
+            <Image
+              src={directorImage}
+              alt=""
+              className={styles.directorImage}
+            />
+            <span className={styles.name}>{director.fullName}</span>
+            <span className={styles.desc}>{director.description}</span>
           </div>
         ))}
       </div>
