@@ -13,6 +13,7 @@
     "password": "",
     "clusterName": "Cluster0",
     "dbName": "basketballAgency",
-    "playerCollectionName": "players"
+    "playerCollectionName": "players",
+    "clubsCollectionName": "clubs"
   }
 }
