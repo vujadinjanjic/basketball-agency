@@ -6,6 +6,7 @@ import config from "./config";
 export const collections: {
   users?: Collection;
   clubs?: Collection;
+  directors?: Collection;
 } = {};
 
 // Initialize connection
@@ -17,6 +18,7 @@ export const connectToDatabase = async () => {
   const database = config.db.dbName;
   const usersCollectionName = config.db.playerCollectionName;
   const clubsCollectionName = config.db.clubsCollectionName;
+  const directorsCollectionName = config.db.directorsCollectionName;
 
   const uri = `mongodb+srv://${username}:${password}@${cluster}.nvj3jfl.mongodb.net/${database}?retryWrites=true&w=majority`;
 
@@ -28,4 +30,5 @@ export const connectToDatabase = async () => {
 
   collections.users = db.collection(usersCollectionName);
   collections.clubs = db.collection(clubsCollectionName);
+  collections.directors = db.collection(directorsCollectionName);
 };

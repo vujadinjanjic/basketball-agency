@@ -14,6 +14,7 @@
     "clusterName": "Cluster0",
     "dbName": "basketballAgency",
     "playerCollectionName": "players",
-    "clubsCollectionName": "clubs"
+    "clubsCollectionName": "clubs",
+    "directorsCollectionName": "directors"
   }
 }
