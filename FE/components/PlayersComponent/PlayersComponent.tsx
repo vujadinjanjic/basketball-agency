@@ -16,7 +16,7 @@ const PlayersComponent = () => {
     <div className={styles.container}>
       <span className={styles.title}>Lorem ipsum</span>
       <div className={styles.playerContainer}>
-        {players.map((player) => (
+        {players?.map((player) => (
           <div
             className={styles.player}
             key={player._id}
